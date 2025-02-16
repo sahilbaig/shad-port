@@ -1,0 +1,17 @@
+/* floatingActionButton.module.css */
+.popup {
+  position: absolute;
+  bottom: 3rem; /* bottom-12 equivalent */
+  right: 0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-lg equivalent */
+  transition: all 0.3s ease-in-out;
+  transform: translateY(1rem); /* translate-y-4 equivalent */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
